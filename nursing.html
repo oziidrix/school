@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nursing Course</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <style>
+
+body {
+
+      
+font-family: "Rowdies", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+
+.back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color:  #007bff; 
+      color: #000000; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; 
+      transform: scale(1.1); 
+    }
+
+
+    
+    .course-card {
+      margin-bottom: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-card img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .course-card .card-body {
+      padding: 20px;
+    }
+
+    .course-card h5 {
+      margin-bottom: 10px;
+    }
+
+    .course-card p {
+      margin-bottom: 20px;
+    }
+
+   
+    .btn-primary {
+      color: #ffffff;
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+
+    
+    .overview-section {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 50px 0;
+    }
+
+    .overview-section h2 {
+      margin-bottom: 30px;
+    }
+
+    .overview-section p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="back-button-container">
+      <button onclick="goBack()" class="back-button">Back</button>
+    </div>
+
+
+<div class="container-fluid overview-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/images/articles/6c9a136a729cbdce51a52f6430b127755741251d.jpg" class="img-fluid" alt="Course Image">
+      </div>
+      <div class="col-md-6">
+        <h2>Nursing</h2>
+        <p>The Nursing course prepares students for a rewarding career in healthcare. Participants will gain comprehensive knowledge and practical skills in patient care, medical procedures, and healthcare management.</p>
+        <p>This course is suitable for individuals who are compassionate, detail-oriented, and thrive in high-pressure environments.</p>
+        <p><strong>Course Requirements:</strong></p>
+        <ul>
+          <li>High school diploma or equivalent</li>
+          <li>Background check and health screenings</li>
+          <li>Completion of prerequisite courses in biology, chemistry, and anatomy</li>
+        </ul>
+        <p><strong>Waiting Time for Acceptance:</strong> 6-8 weeks</p>
+        <a href="./application.html" class="btn btn-primary">Apply Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <h2 class="mb-4">Other Courses</h2>
+  <div class="row">
+    
+    <div class="col-md-4">
+      <div class="card course-card">
+        <img src="https://www.artshub.com.au/wp-content/uploads/sites/2/2017/10/2-273647-Main-0x0-0.jpg?w=1006" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Psychology</h5>
+          <p class="card-text">Embark on a journey of understanding the human mind, behavior, and emotions.</p>
+          <a href="./psychology.html" class="btn btn-primary">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card course-card">
+        <img src="https://cdn.educba.com/academy/wp-content/uploads/2023/12/Sociology.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sociology</h5>
+          <p class="card-text">Uncover the social structures, dynamics, and phenomena that shape human society.</p>
+          <a href="./sociology.html" class="btn btn-primary">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-md-4">
+      <div class="card course-card">
+        <img src="https://www.voicesofyouth.org/sites/voy/files/images/2022-03/educ.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Education</h5>
+          <p class="card-text">Ignite a passion for teaching, learning, and educational leadership .</p>
+          <a href="./education.html" class="btn btn-primary">Enroll Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  } </script>
+
+</body>
+</html>

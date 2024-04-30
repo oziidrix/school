@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - University</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+    body {
+      font-family: "Rowdies", sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .jumbotron {
+      background-color: #fff;
+    }
+
+    .card {
+      border: none;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+    }
+
+    .card-text {
+      font-size: 1.1rem;
+      line-height: 1.6; /* Adjust line height for better readability */
+    }
+
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transition added for background-color */
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; /* Yellow background on hover */
+      transform: scale(1.1); /* Enlarge on hover */
+    }
+  </style>
+</head>
+<body>
+
+<div class="back-button-container">
+  <button onclick="goBack()" class="back-button">Back</button>
+</div>
+
+<div class="jumbotron text-center">
+  <h1 class="display-4">About Olaf University </h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/1088402018/photo/focus-on-history.jpg?b=1&s=612x612&w=0&k=20&c=4U-fUiJPEkzc7obd_Qfj5DXvJW68VXGRWYEGPD1y8To=" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h5 class="card-title">Our History</h5>
+          <p class="card-text">Olaf University, founded in 1950, has a rich and storied history that reflects its commitment to academic excellence, innovation</p>
+          <p class="card-text">Over the decades, Olaf University has adapted to the changing needs of society while remaining true to its core values of intellectual inquiry and social responsibility. </p>
+          <p class="card-text">Today, Olaf University stands as a testament to the enduring power of education to transform lives and shape the future..</p>
+          <p class="card-text">Join us as we write the next chapter in the history of Olaf University a chapter defined by excellence, discovery, and a commitment to making a difference in the world.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/7666429/pexels-photo-7666429.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h5 class="card-title">Our Mission</h5>
+          <p class="card-text">At Olaf University, our mission is to provide a transformative educational experience that empowers individuals to reach their full potential and make meaningful contributions to society.</p>
+          <p class="card-text">Through innovative teaching and research, we aim to inspire our students to become engaged citizens, equipped with the knowledge and skills needed to address the complex challenges of life.</p>
+          <p class="card-text">Olaf University serves as a catalyst for positive change, we are committed to fostering partnerships with the broader community.Join us in our mission to educate and empower lives.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/247819/pexels-photo-247819.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Image">
+        <div class="card-body">
+          <h5 class="card-title">Our Vision</h5>
+          <p class="card-text">At Olaf University, we envision a future where education is a catalyst for positive change, where knowledge transcends boundaries, and where every individual has the opportunity to realize their fullest potential.</p>
+          <p class="card-text">Our vision is to create a vibrant and inclusive community of learners, scholars, and leaders who are committed to advancing the frontiers of knowledge.</p>
+          <p class="card-text">As we look to the future, we envision Olaf University as a dynamic hub of discovery and innovation, where interdisciplinary collaboration flourishes, and where cutting-edge research and scholarship drive positive change.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar 2024</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+
+
+/* Styling for the Back button */
+.back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color:  #007bff; /* White background */
+      color: #000000; /* Black text */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transition added for background-color */
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; /* Yellow background on hover */
+      transform: scale(1.1); /* Enlarge on hover */
+    }
+
+
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            padding-top: 50px; 
+
+            font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+        }
+
+        .calendar {
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .calendar .season {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .calendar .event {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .calendar .event:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .event-date {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .event-name {
+            color: #333;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="back-button-container">
+          <button onclick="goBack()" class="back-button">Back</button>
+        </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="text-center mb-4">
+                    <h2>Olaf University Academic Calendar 2024</h2>
+                </div>
+                <div class="calendar">
+                    <div class="season">Spring 2024</div>
+                    <div class="event">
+                        <span class="event-date">January 15</span>: <span class="event-name">Spring Semester Begins</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">February 3</span>: <span class="event-name">Midterm Exams</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">March 20</span>: <span class="event-name">Spring Break Begins</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">April 10</span>: <span class="event-name">Spring Fling Festival</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">April 22</span>: <span class="event-name">Earth Day Celebration</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">May 5</span>: <span class="event-name">Cinco de Mayo Celebration</span>
+                    </div>
+                    <!-- Add more events for Spring -->
+
+                    <div class="season">Summer 2024</div>
+                    <div class="event">
+                        <span class="event-date">June 1</span>: <span class="event-name">Summer Session Starts</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">July 4</span>: <span class="event-name">Independence Day (Holiday)</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">August 15</span>: <span class="event-name">Summer Session Ends</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">August 30</span>: <span class="event-name">Orientation for Fall</span>
+                    </div>
+                    <!-- Add more events for Summer -->
+
+                    <div class="season">Fall 2024</div>
+                    <div class="event">
+                        <span class="event-date">September 3</span>: <span class="event-name">Fall Semester Begins</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">October 15</span>: <span class="event-name">Homecoming Weekend</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">November 22</span>: <span class="event-name">Thanksgiving Break Begins</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">December 1</span>: <span class="event-name">End-of-Semester Party</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">December 10</span>: <span class="event-name">Final Exams</span>
+                    </div>
+                    <div class="event">
+                        <span class="event-date">December 20</span>: <span class="event-name">Winter Break Begins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+          }
+        
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Aid</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 80px; 
+      margin-bottom: 120px; 
+
+
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    }
+
+    .section-title {
+      color: #00539f;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    }
+
+    .aid-info {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .info-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00539f;
+      margin-bottom: 10px;
+
+     
+    }
+
+    .info-description {
+      color: #666666;
+    }
+
+    
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color: #ffffff; 
+      color: #000000; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; 
+      transform: scale(1.1);
+    }
+
+    
+    .bottom-banner {
+      background-color: #00539f;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(100%);
+      transition: transform 0.5s ease; 
+
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    }
+
+    
+    .show-banner {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="back-button-container">
+    <button onclick="goBack()" class="back-button">Back</button>
+  </div>
+  
+  <h1 class="section-title">Financial Aid</h1>
+  
+  <div class="aid-info">
+    <div class="info-title">Scholarships</div>
+    <div class="info-description">
+      Our institution offers various scholarships to assist students in financing their education. Scholarships are awarded based on academic achievement, leadership qualities, and extracurricular involvement. 
+    </div>
+  </div>
+
+  <div class="aid-info">
+    <div class="info-title">Grants</div>
+    <div class="info-description">
+      Grants are another form of financial aid available to eligible students. These funds are typically awarded based on financial need and do not require repayment. Our financial aid office can provide guidance on the application process for grants.
+    </div>
+  </div>
+
+  <div class="aid-info">
+    <div class="info-title">Loans</div>
+    <div class="info-description">
+      For students who require additional financial assistance, loans may be available. These loans must be repaid with interest after graduation. Our financial aid advisors can help students explore loan options and understand the terms and conditions.
+    </div>
+  </div>
+</div>
+
+<div class="bottom-banner" id="bottomBanner">
+  <p>&copy; Olaf University 2024</p>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+
+  window.onscroll = function() {
+    
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+      document.getElementById("bottomBanner").classList.add("show-banner");
+    } else {
+      document.getElementById("bottomBanner").classList.remove("show-banner");
+    }
+  };
+</script>
+</body>
+</html>

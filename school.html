@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+    .nav-item {
+      padding: 20px;
+    }
+
+    .navbar-nav {
+      margin: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: #000000;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .navbar-nav .nav-link:hover {
+      transform: scale(1.1); 
+    }
+
+    .btn-primary {
+      color: #000000;
+      background-color: white;
+      border-color: black;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: #ffc107; 
+      transform: scale(1.1); 
+    }
+
+    .navbar-brand img {
+      height: 90px; 
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.pexels.com/photos/137618/pexels-photo-137618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      position: relative;
+      font-family: "Rowdies", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 255, 0.158); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .welcome-message {
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    .welcome-paragraph { 
+      font-family: "Rowdies", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+      margin: 50px;
+    }
+
+    .welcome-buttons {
+      margin-top: 50px;
+    }
+
+    .welcome-buttons .btn {
+      margin-right: 10px;
+    }
+
+    .welcome-buttons .btn:hover {
+      background-color: blue;
+    }
+
+    /* Search form */
+    .search-form {
+      display: none;
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+    }
+
+    .search-form input[type="text"] {
+      width: 150px;
+      border: none;
+      border-bottom: 2px solid #000000;
+      outline: none;
+      padding: 5px;
+      margin-right: 5px;
+    }
+
+    .search-form button {
+      background-color: #ffc107;
+      color: #000000;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay">
+  <div class="welcome-message">
+    Welcome to Olaf University
+    <div class="welcome-paragraph">
+      <p>Welcome to Our University! Discover endless opportunities, ignite your curiosity, and embark on an extraordinary journey of learning and growth. No matter your career choice We're here to support and inspire you every step of the way. Welcome to a community where excellence thrives, innovation flourishes, and possibilities are limitless. Begin your unforgettable experience with us today!</p>
+    </div>
+
+    <div class="welcome-buttons">
+      
+      <a href="./test.html"> <button class="btn btn-primary">Testimonials</button> </a>
+      <a href="./academics.html"> <button class="btn btn-primary">Visit Courses</button> </a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="./school.html"><img src="https://t3.ftcdn.net/jpg/04/91/76/62/360_F_491766294_h4j7LbW2YgfbNHhq7F8GboIc1XyBSEY5.jpg" alt="University Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admissions</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            <a class="dropdown-item" href="./adminreq.html">Admissions Requirements</a>
+            <a class="dropdown-item" href="./process.html">Application Process</a>
+            <a class="dropdown-item" href="./aid.html">Financial Aid</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academics</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            <a class="dropdown-item" href="./academics.html">Programs Offered</a>
+            <a class="dropdown-item" href="./calendar1.html">Academic Calendar</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Campus</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+            <a class="dropdown-item" href="./clubs.html">Student Organizations</a>
+            <a class="dropdown-item" href="./facilities.html">Facilities</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+            <a class="dropdown-item" href="./about.html">University History and vision</a>
+            <a class="dropdown-item" href="./leadership.html">Leadership</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+            <a class="dropdown-item" href="./link.html">Contact Information</a>
+            <a class="dropdown-item" href="./contact.html">Contact Form</a>
+            
+          </div>
+        </li>
+      </ul>
+
+      <!-- Search icon and form -->
+      <div class="d-flex align-items-center">
+        <span class="search-icon mr-2">
+          <!-- Bootstrap search icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 9.344a5.5 5.5 0 1 0-1.397 1.398l3.88 3.88a1 1 0 0 0 1.415-1.413l-3.88-3.88zM7.5 10.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+        </span>
+        <!-- Search form -->
+        <form class="search-form" action="#" method="GET">
+          <input type="text" name="search" placeholder="Search...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+   
+      <a href="./login2.html"> <button class="btn btn-primary ml-3">Sign up/ Login</button> </a>
+    </div>
+  </div>
+</nav>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  var searchTimeout;
+  $(document).ready(function() {
+    $(".search-icon, .search-form").hover(function() {
+      clearTimeout(searchTimeout); 
+      $(".search-form").show();
+    }, function() {
+      searchTimeout = setTimeout(function() {
+        $(".search-form").hide();
+      }, 3000); 
+    });
+  });
+</script>
+</body>
+</html>

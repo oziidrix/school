@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olaf University</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+
+  
+
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding-top: 80px; 
+    }
+
+    .course-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .course-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .course-description {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .course-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .course-link:hover {
+      text-decoration: underline;
+    }
+
+    .welcome-message {
+     
+      color: #000000;
+      padding: 30px 0;
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 10px;
+
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+
+    }
+
+    .welcome-message h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .welcome-message p {
+      font-size: 18px; 
+    }
+
+    
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color:  #007bff;
+      color: #000000; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; 
+      transform: scale(1.1); 
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="back-button-container">
+    <button onclick="goBack()" class="back-button">Back</button>
+  </div>
+  
+  <div class="welcome-message">
+    <h1>Welcome to Our Courses Section!</h1>
+    <p>Explore our diverse range of courses designed to enhance your skills and knowledge.</p>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Business Administration</div>
+        <div class="course-description">Embark on a journey of strategic leadership and managerial prowess with our Business Administration program. At Olaf University, we offer a comprehensive curriculum designed to equip you with the skills and knowledge necessary to thrive in today's dynamic business environment.</div>
+        <a href="./businessadmin.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Computer Science</div>
+        <div class="course-description">Enter the realm of innovation and technological advancement with our Computer Science program. At Olaf University, we offer a dynamic curriculum designed to cultivate your expertise in the field of computing.</div>
+        <a href="./compsci.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+   
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Microenconomics </div>
+        <div class="course-description">Discover the intricate workings of markets, consumer behavior, and individual decision-making with our Microeconomics program. At Olaf University, we offer a comprehensive curriculum designed to explore the fascinating world of microeconomic theory and its applications.</div>
+        <a href="./econ.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Psychology</div>
+        <div class="course-description">Embark on a journey of understanding the human mind, behavior, and emotions with our Psychology program. At Olaf University, we offer a comprehensive curriculum that explores the fascinating depths of psychological theory, research, and practice.</div>
+        <a href="./psychology.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Education</div>
+        <div class="course-description">Ignite a passion for teaching, learning, and educational leadership with our Education program at Olaf University. Our program is designed to empower aspiring educators with the knowledge, skills, and values necessary to make a positive impact in today's diverse and dynamic classrooms.</div>
+        <a href="./education.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Sociology</div>
+        <div class="course-description">Uncover the social structures, dynamics, and phenomena that shape human society with our Sociology program at Olaf University. Our program offers a thought-provoking exploration of social behavior, cultural patterns, inequality, and social change.</div>
+        <a href="./sociology.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Finance</div>
+        <div class="course-description">Unlock the world of money management, investment strategies, and financial analysis with our Finance program at Olaf University. Our program offers a comprehensive exploration of the principles and practices that drive the global financial industry.</div>
+        <a href="./finance.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Nursing</div>
+        <div class="course-description">Embark on a rewarding career dedicated to caring, healing, and making a difference in people's lives with our Nursing program at Olaf University. Our program is designed to prepare compassionate and competent nurses who are ready to meet the challenges of modern healthcare.</div>
+        <a href="./nursing.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="course-card">
+        <div class="course-title">Civil Engineering</div>
+        <div class="course-description">Shape the world around you with our Civil Engineering program at Olaf University. Our program empowers aspiring engineers with the knowledge, skills, and creativity to design, construct, and maintain the infrastructure that sustains modern society.</div>
+        <a href="./engineering.html" class="course-link">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+</body>
+</html>

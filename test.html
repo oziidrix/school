@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olaf University</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    
+    body {
+      
+      background-color: #f8f9fa;
+
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    }
+    .jumbotron {
+      background-color:#00539f;
+      color: #fff;
+      padding: 3rem;
+      border-radius: 0;
+    }
+
+
+    .back-button {
+      padding: 10px 20px;
+margin-bottom: 20px;
+
+      background-color:  #007bff; 
+      color: #000000; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; 
+      transform: scale(1.1); 
+    }
+
+
+
+    .testimonial-card {
+      transition: transform 0.5s;
+      border: none;
+      border-radius: 20px;
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .testimonial-card:hover {
+      transform: scale(1.05);
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      font-size: 2rem;
+      width: 50px;
+      height: 50px;
+    }
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      background-color: black;
+    }
+    .btn-primary {
+      background-color: #ffffff;
+      border-color: #343a40;
+      color: black;
+    }
+    .btn-primary:hover {
+      background-color: yellow;
+      border-color: #23272b;
+      color: black;
+
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="back-button-container">
+          <button onclick="goBack()" class="back-button">Back</button>
+        </div>
+
+
+
+
+
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Olaf University</h1>
+  <p class="lead">Discover Excellence, Create Your Future Unlock your potential and shape your future with us!</p>
+  <p>At Olaf University, we believe in nurturing not just intellect, but character and ambition. Our commitment to academic excellence, innovative learning, and supportive community sets us apart as a premier institution for higher education. Join us and embark on a transformative journey towards success and fulfillment.Below are some testimonials from our fellow students</p>
+</div>
+
+
+<div class="container py-5">
+  <h2 class="text-center mb-5">Testimonials</h2>
+  <div id="testimonialCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+    <div class="carousel-inner">
+      <!-- Testimonials -->
+      
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">Olaf University has provided me with an exceptional learning experience. I am grateful for the knowledge and skills I've gained.</p>
+                <p class="card-text"><strong>- Alice Smith</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">The professors at Olaf University are incredibly knowledgeable and passionate about their subjects, which makes learning engaging and inspiring.</p>
+                <p class="card-text"><strong>- Michael Johnson</strong>, Past Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">I appreciate the diverse community at Olaf University, where I've had the opportunity to learn from people with different backgrounds and perspectives.</p>
+                <p class="card-text"><strong>- Emily Davis</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">The facilities at Olaf University are top-notch, providing students with the resources they need to succeed academically and professionally.</p>
+                <p class="card-text"><strong>- David Brown</strong>, Past Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">Olaf University offers a wide range of extracurricular activities and clubs, allowing students to pursue their interests outside of the classroom.</p>
+                <p class="card-text"><strong>- Sarah Wilson</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">As a working professional, the flexibility of Olaf University's online programs has allowed me to pursue higher education while balancing my career and family.</p>
+                <p class="card-text"><strong>- Thomas Miller</strong>, Online Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">The career services at Olaf University are invaluable, providing students with guidance and support in their job search and professional development.</p>
+                <p class="card-text"><strong>- Jessica Martinez</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">I chose Olaf University for its reputation for excellence bests decision i ever made.</p>
+                <p class="card-text"><strong>- Matthew Thompson</strong>, Past Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">The supportive community at Olaf University extends beyond the classroom, with faculty and staff always available to provide guidance.</p>
+                <p class="card-text"><strong>- Jennifer White</strong>, Past Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">Olaf University's has created a welcoming environment where all students feel valued and respected.</p>
+                <p class="card-text"><strong>- Robert Garcia</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">I am impressed by the approach to education at Olaf University, where technology is easily integrated into the learning experience.</p>
+                <p class="card-text"><strong>- Michelle Lee</strong>, Past Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">The sense of community at Olaf University is unmatched, with students and faculty alike coming together to support each other's academic and personal growth.</p>
+                <p class="card-text"><strong>- Daniel Clark</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">I am grateful for the mentorship I've received from faculty members at Olaf University, who have helped me navigate my academic and career goals.</p>
+                <p class="card-text"><strong>- Samantha Roberts</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card testimonial-card">
+              <div class="card-body">
+                <p class="card-text">Olaf University's emphasis on hands-on learning experiences has prepared me well for my future career.</p>
+                <p class="card-text"><strong>- Andrew Wilson</strong>, Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-item">
+      <div class="row justify-content-center">
+       <div class="col-md-6">
+        <div class="card testimonial-card">
+          <div class="card-body">
+           <p class="card-text">The sense of pride and belonging I feel as a member of the Olaf University community is something I will carry with me for the rest of my life.</p>
+            <p class="card-text"><strong>- Elizabeth Brown</strong>, Alumni</p>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+
+    </div>
+    <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Your Journey -->
+
+
+<div class="jumbotron text-center bg-blue text-white">
+
+  <h2 class="display-4">Ready to Start Your Journey with Olaf University?</h2>
+  <p class="lead">Start today and discover a world of opportunities. Unlock your potential and shape your future with us!</p>
+  <p>At Olaf University, we believe in nurturing not just intellect, but character and ambition. Our commitment to academic excellence, innovative learning, and supportive community sets us apart as a premier institution for higher education. Join us and embark on a transformative journey towards success and fulfillment</p>
+  <a class="btn btn-primary btn-lg" href="./academics.html" role="button">Apply Now</a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+
+
+  function goBack() {
+    window.history.back();
+  }
+
+  $(document).ready(function(){
+    $('#testimonialCarousel').carousel({
+      interval: 10000
+    });
+  });
+</script>
+
+</body>
+</html>

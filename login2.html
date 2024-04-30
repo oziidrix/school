@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 255, 0.158), rgba(0, 0, 255, 0.158)), url('https://images.pexels.com/photos/137618/pexels-photo-137618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-position: center;
+      font-family: "Rowdies", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .card {
+      width: 380px;
+      background: rgba(0, 0, 0, 0.8); 
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .form {
+      padding: 50px 40px;
+    }
+
+    .form h2 {
+      color: #ffffff; 
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    .inputBox {
+      position: relative;
+      margin-top: 35px;
+    }
+
+    .inputBox input {
+      width: 100%;
+      padding: 20px 10px 10px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #000000; 
+      font-size: 1em;
+      letter-spacing: 0.05em;
+    }
+
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span {
+      color: #45f3ff;
+      transform: translateX(0px) translateY(-34px);
+      font-size: 0.75em;
+    }
+
+   
+
+
+
+    .inputBox span {
+      position: absolute;
+      left: 0;
+      padding: 20px 0px 10px;
+      font-size: 1em;
+      color: #8f8f8f;
+      pointer-events: none;
+      letter-spacing: 0.05em;
+      transition: 0.5s;
+    }
+
+    .inputBox i {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #eefeff;
+      border-radius: 4px;
+      transition: 0.5s;
+      pointer-events: none;
+
+      
+      
+    }
+
+    .inputBox input:valid ~ i,
+    .inputBox input:focus ~ i {
+      height: 44px;
+     
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .links a {
+      margin: 10px 0;
+      font-size: 0.75em;
+      color: #8f8f8f;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .links a:hover,
+    .links a:nth-child(2):hover {
+      color: #45e9ff;
+      transform: scale(1.1);
+    }
+
+    input[type="submit"] {
+      border: none;
+      outline: none;
+      background: #ffffff; 
+      color: #000000; 
+      padding: 11px 25px;
+      width: 100px;
+      margin-top: 10px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      transform: scale(1.1);
+      background-color: #ffc107; 
+    }
+
+    input[type="submit"]:active {
+      opacity: 0.8;
+    }
+
+    
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color: white; 
+      color: #000000; 
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; 
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; 
+      transform: scale(1.1); 
+    }
+
+   
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="form">
+      <h2>Sign In</h2>
+      <div class="inputBox">
+        <input type="text" required="'required" />
+        <span>Username</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" required="'required" />
+        <span>Password</span>
+        <i></i>
+      </div>
+      <div class="links">
+        <a href="#">Forgot Password ?</a>
+        <a href="./application.html">Sign Up</a>
+      </div>
+      <input type="submit" value="Login" />
+    </div>
+  </div>
+  
+  
+  <div class="back-button-container">
+    <button onclick="goBack()" class="back-button">Back</button>
+    
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

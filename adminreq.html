@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions Requirements</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+
+      font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+    }
+
+    .header {
+      background-color: #00539f;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      color: #00539f;
+    }
+
+    .requirement {
+      margin-bottom: 20px;
+    }
+
+    .requirement h3 {
+      margin-bottom: 10px;
+    }
+
+    .requirement ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .requirement ul li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .requirement ul li:before {
+      content: "\2022";
+      position: absolute;
+      left: 0;
+      color: #ffc107;
+    }
+
+    .footer {
+      background-color: #00539f;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Styling for the Back button */
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color: #ffffff; /* White background */
+      color: #000000; /* Black text */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transition added for background-color */
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; /* Yellow background on hover */
+      transform: scale(1.1); /* Enlarge on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Admissions Requirements</h1>
+  </div>
+
+    <a href="./school.html"> <div class="back-button-container"> </a> 
+    <button onclick="goBack()" class="back-button">Back</button>
+  </div>
+
+  <div class="container">
+    <div class="requirement">
+      <h3>High School Transcript</h3>
+      <p>We require a complete high school transcript demonstrating strong academic performance.</p>
+    </div>
+
+    <div class="requirement">
+      <h3>Standardized Test Scores</h3>
+      <p>Submission of SAT or ACT scores is required. Scores should be sent directly from the testing agency.</p>
+    </div>
+
+    <div class="requirement">
+      <h3>Letters of Recommendation</h3>
+      <p>Two letters of recommendation from teachers or counselors who can speak to your academic abilities and character.</p>
+    </div>
+
+    <div class="requirement">
+      <h3>Personal Statement</h3>
+      <p>A personal statement or essay explaining your reasons for applying and your goals for the future.</p>
+    </div>
+
+    <div class="requirement">
+      <h3>Extracurricular Activities</h3>
+      <p>We value involvement in extracurricular activities and community service. Please provide a list of your activities and achievements.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2024 Olaf University Admissions</p>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+  
+
+  <style>
+    body {
+      
+
+        font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+
+      
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+
+    .back-button-container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      background-color:  #007bff; /* White background */
+      color: #000000; /* Black text */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transition added for background-color */
+    }
+
+    .back-button:hover {
+      background-color: #ffc107; /* Yellow background on hover */
+      transform: scale(1.1); /* Enlarge on hover */
+    }
+
+
+
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .form-group {
+      margin-bottom: 30px;
+    }
+
+    label {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    textarea, input[type="email"], select {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background-color: #f2f2f2;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    button[type="submit"] {
+      padding: 12px 30px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: popUpAnimation 0.5s ease;
+    }
+
+    @keyframes popUpAnimation {
+      0% {
+        transform: scale(0.7);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .tick-animation {
+      margin-bottom: 20px;
+      font-size: 48px;
+    }
+
+    .tick {
+      color: #28a745;
+    }
+
+    .close-btn {
+      padding: 12px 30px;
+      background-color: #ffc107;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background-color: #ffc700;
+    }
+
+    .category-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="back-button-container">
+      <button onclick="goBack()" class="back-button">Back</button>
+    </div>
+
+
+
+<div class="container">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <label class="category-label" for="category">What is your question about?</label>
+      <select id="category" name="category" class="form-control" required>
+        <option value="">Select an option...</option>
+        <option value="Admissions">Admissions</option>
+        <option value="Financial Aid/Scholarships">Financial Aid/Scholarships</option>
+        <option value="Housing/Residence Life">Housing/Residence Life</option>
+        <option value="Academic Advising">Academic Advising</option>
+        <option value="Registration/Enrollment">Registration/Enrollment</option>
+        <option value="Student Accounts/Billing">Student Accounts/Billing</option>
+        <option value="Student Services">Student Services</option>
+        <option value="Academic Support/Tutoring">Academic Support/Tutoring</option>
+        <option value="Technology/IT Support">Technology/IT Support</option>
+        <option value="Student Activities/Clubs">Student Activities/Clubs</option>
+        <option value="Internships/Co-op Programs">Internships/Co-op Programs</option>
+        <option value="Graduation/Commencement">Graduation/Commencement</option>
+        <option value="Health and Wellness">Health and Wellness</option>
+        <option value="Library Services">Library Services</option>
+        <option value="Transportation/Parking">Transportation/Parking</option>
+        <option value="Study Abroad/Exchange Programs">Study Abroad/Exchange Programs</option>
+        <option value="Diversity and Inclusion">Diversity and Inclusion</option>
+        <option value="Safety/Security">Safety/Security</option>
+        <option value="Career Services/Job Placement">Career Services/Job Placement</option>
+        <option value="Graduate Programs">Graduate Programs</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="category-label" for="question">Your Question</label>
+      <textarea id="question" name="question" class="form-control" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+      <label class="category-label" for="email">Your Email</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+      <div class="invalid-feedback">
+        Please provide a valid email address.
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  </form>
+</div>
+
+<div class="overlay">
+  <div class="popup">
+    <div class="tick-animation">
+      <div class="tick">&#10003;</div>
+    </div>
+    <p>Your message has been submitted. Someone from our admissions team will reach out to you via email within the next 24 to 48 hours.</p>
+    <button class="close-btn">Close</button>
+  </div>
+</div>
+
+<script>
+
+function goBack() {
+    window.history.back();
+  }
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Show popup
+    document.querySelector('.overlay').style.display = 'flex';
+  });
+
+  document.querySelector('.close-btn').addEventListener('click', function() {
+    // Hide popup
+    document.querySelector('.overlay').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
